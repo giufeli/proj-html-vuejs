@@ -2,7 +2,7 @@
   <main>
     <!-- eslint-disable -->
     <div class="background">
-      <div class="container my-5">
+      <div class="container py-5">
         <div class="row">
           <div class="col-7">
             <div class="text ">
@@ -16,22 +16,22 @@
                 in Transport
               </div>
             </div>
-              <div class="paragraph">
+              <div class="paragraph-light">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse iste similique commodi! Facere alias quaerat aspernatur, nemo ut voluptatum minus pariatur incidunt voluptate? Quaerat, saepe!
               </div>
-              <div class="paragraph">
+              <div class="paragraph-light">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse iste similique commodi! Facere alias quaerat aspernatur, nemo ut voluptatum minus pariatur incidunt voluptate? Quaerat, saepe!
               </div>
               <div class="italic">
                 <div class="styleItalic"></div>
-                <div class="paragraph specialItalic">
+                <div class="paragraph-light specialItalic">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse iste similique commodi! Facere alias quaerat aspernatur, nemo ut voluptatum minus pariatur incidunt voluptate? Quaerat, saepe!
               </div>
               </div>
-              <div class="paragraph">
+              <div class="paragraph-light">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse iste similique commodi!
               </div>
-              <ul class="paragraph">
+              <ul class="paragraph-light">
                 <li>Lorem ipsum dolor sit amet</li>
                 <li>consectetur adipisicing elit</li>
                 <li>Esse iste similique commodi</li>
@@ -39,7 +39,7 @@
                 <li>Quaerat, saepe!</li>
               </ul>
           </div>
-          <div class="col-3">
+          <div class="col-5">
             <div class="smallTitle">
               Vehicle Types
             </div>
@@ -48,24 +48,35 @@
                 <div
                   v-for="obj in veichelTypes"
                   :key="(obj +1)"
-                  class="d-flex mb-3"
+                  class="d-flex mb-3 gap-4"
+                  style="height:70px; width: 100%;"
                   >
-                  <img
-                  :src="`@/assets/img/${obj.img}`"
-                  alt="Truck"
-                  >
-                  <div>
-                    <div class="smallTitle">
-                      {{ obj.name }}
+                    <div class="col-3 bgTruck">
+                      <img
+                      :src="`img/${obj.img}`"
+                      alt="Truck"
+                      >
                     </div>
-                    <div class="paragraph mt-2">
-                      Max Weight {{ obj.weight }}
+
+                    <div class="col-5">
+                      <div class="smallTitle">
+                        {{ obj.name }}
+                      </div>
+                      <div class="paragraph-light mt-2 pl-3">
+                        Max Weight {{ obj.weight }}
+                      </div>
                     </div>
-                  </div>
                 </div>
-
               </div>
-
+            </div>
+            <div class="row mt-4">
+              <div class="smallTitle">
+                Certifications
+              </div>
+              <div class="col-6 mt-4 d-flex" style="height:95px;">
+                <img src="@/assets/img/certificate.png" alt="">
+                <img src="@/assets/img/certificate.png" alt="">
+              </div>
             </div>
           </div>
         </div>
@@ -88,11 +99,9 @@ export default {
     height: 85vh;
     background-color: white;
   }
-
   .colored{
     color: #16928e;
   }
-
   .italic{
     display: flex;
     font-style: italic;
@@ -107,13 +116,19 @@ export default {
     margin: auto;
     margin-right: 30px;
   }
-
   .specialItalic{
     margin: auto;
   }
-
   .smallTitle{
     color:#191c1e
+  }
+  .bgTruck{
+    background-color: #d9f5f5eb;
+    border-radius: 6px;
+    padding: 5px;
+  }
+  .titleBackground{
+    background-color: rgba(218,236,237,0.5)
   }
 
 </style>

@@ -4,32 +4,28 @@
       <div class="container">
         <div class="row">
           <div
-            v-for="obj in siteData"
-            :key="(obj +1)"
             class="col-6 marginFix"
           >
             <font-awesome-icon
               icon="fa-solid fa-clock"
               class="icon"
-            />  Open Hours: {{ obj.openHours }}
+            />  Open Hours: {{ siteData.openHours }}
           </div>
 
           <div
-            v-for="obj in siteData"
-            :key="(obj +2)"
             class="col-6 marginFix d-flex justify-content-around gap-3"
           >
             <div>
               <font-awesome-icon
                 icon="fa-solid fa-phone"
                 class="icon"
-              /> {{ obj.phoneNumber }}
+              /> {{ siteData.phoneNumber }}
             </div>
             <div>
               <font-awesome-icon
                 icon="fa-solid fa-envelope"
                 class="icon"
-              /> {{ obj.email }}
+              /> {{ siteData.email }}
             </div>
             <div>
               <font-awesome-icon
@@ -53,18 +49,11 @@
         </div>
       </div>
     </div>
-    <!-- ho provato a fare un ciclo per rendere dinamica l'immagine -->
     <div
-      v-for="obj in siteData"
-      :key="(obj +1)"
       class="home"
     >
-      <!-- <img                                        Quale sintassi usare per renderla dinamica?
-        :src="`@/assets/img/${obj.photo[banner1]}`"
-        alt="banner1"
-      > -->
       <img
-        src="@/assets/img/bg-9.jpg"
+        :src="`img/${siteData.photo[0].banner1}`"
         alt="banner1"
       >
       <div class="navBar">
@@ -142,7 +131,7 @@
 <script>
 export default {
   props: {
-    siteData: Array,
+    siteData: Object,
     arrMenu: Array,
   },
 };
@@ -173,9 +162,14 @@ export default {
     font-weight: 600;
   }
 
+  .paragraph{
+    color: #666666;
+  }
+
   img{
     filter: brightness(40%);
     opacity: 0.95;
+    object-fit: cover;
   }
 
   .title{
