@@ -147,7 +147,7 @@ export default {
 
   .smallTitle{
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 900;
   }
 
   .titleBackground{

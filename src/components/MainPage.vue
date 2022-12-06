@@ -39,29 +39,31 @@
                 <li>Quaerat, saepe!</li>
               </ul>
           </div>
-          <div class="col-4">
+          <div class="col-3">
             <div class="smallTitle">
               Vehicle Types
             </div>
             <div class="row mt-5">
-              <div class="col-12">
+              <div class="col-12 d-flex flex-column">
                 <div
                   v-for="obj in veichelTypes"
                   :key="(obj +1)"
-                  class="col-5">
-                  ciao
-                </div>
-                <div
-                  v-for="obj in veichelTypes"
-                  :key="(obj +1)"
-                  class="col-5">
-                  <div class="smallTitle">
-                    {{ obj.name }}
+                  class="d-flex mb-3"
+                  >
+                  <img
+                  :src="`@/assets/img/${obj.img}`"
+                  alt="Truck"
+                  >
+                  <div>
+                    <div class="smallTitle">
+                      {{ obj.name }}
+                    </div>
+                    <div class="paragraph mt-2">
+                      Max Weight {{ obj.weight }}
+                    </div>
                   </div>
-                  <div class="paragraph mt-2">
-                    Max Weight {{ obj.weight }}
-                  </div>
                 </div>
+
               </div>
 
             </div>
