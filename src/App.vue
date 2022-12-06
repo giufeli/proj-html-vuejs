@@ -4,7 +4,7 @@
       :site-data="siteData"
       :arr-menu="arrMenu"
     />
-    <MainPage />
+    <MainPage :veichel-types="veichelTypes" />
     <FooterPage />
   </div>
 </template>
@@ -124,6 +124,37 @@ export default {
   .icon:hover{
     color: #00a1a1;
     cursor: pointer;
+  }
+
+  .paragraph{
+    font-size: 15px;
+    font-weight: 300;
+    color: #69696d;
+    margin-top: 30px;
+  }
+
+  .title{
+    font-size: 40px;
+    font-weight: 900;
+    //color:#191c1e
+  }
+
+  .text{
+    font-size: 15px;
+    font-weight: 600;
+    color: #16928e;
+  }
+
+  .smallTitle{
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .titleBackground{
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba(218,236,237,0.5) //Come fare opacità senza prendere il testo
+    //opacity: 0.5;
   }
 
 </style>

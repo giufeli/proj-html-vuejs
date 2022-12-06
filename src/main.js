@@ -1,10 +1,12 @@
 import Vue from 'vue';
-import { library } from '@fortawesome/fontawesome-svg-core'; // libreria icone del progetto
-import { faUser } from '@fortawesome/free-regular-svg-icons'; // importiamo le icone che ci servono
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'; // importazione del componente FontAwesomeIcon
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faUser, faGem } from '@fortawesome/free-regular-svg-icons';
+import { faClock, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faFacebookF, faTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import App from './App.vue';
 
-library.add(faUser); // aggiungiamo le icone nella libreria del progetto
+library.add(faUser, faGem, faClock, faPhone, faEnvelope, faFacebookF, faTwitter, faLinkedinIn);
 Vue.component('FontAwesomeIcon', FontAwesomeIcon);
 
 Vue.config.productionTip = false;

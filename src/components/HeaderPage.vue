@@ -1,6 +1,5 @@
 <template>
   <header>
-    <!-- Aggiungere icone -->
     <div class="topBar">
       <div class="container">
         <div class="row">
@@ -9,7 +8,10 @@
             :key="(obj +1)"
             class="col-6 marginFix"
           >
-            Open Hours: {{ obj.openHours }}
+            <font-awesome-icon
+              icon="fa-solid fa-clock"
+              class="icon"
+            />  Open Hours: {{ obj.openHours }}
           </div>
 
           <div
@@ -18,10 +20,34 @@
             class="col-6 marginFix d-flex justify-content-around gap-3"
           >
             <div>
-              {{ obj.phoneNumber }}
+              <font-awesome-icon
+                icon="fa-solid fa-phone"
+                class="icon"
+              /> {{ obj.phoneNumber }}
             </div>
             <div>
-              {{ obj.email }}
+              <font-awesome-icon
+                icon="fa-solid fa-envelope"
+                class="icon"
+              /> {{ obj.email }}
+            </div>
+            <div>
+              <font-awesome-icon
+                icon="fa-brands fa-facebook-f"
+                class="icon"
+              />
+            </div>
+            <div>
+              <font-awesome-icon
+                icon="fa-brands fa-twitter"
+                class="icon"
+              />
+            </div>
+            <div>
+              <font-awesome-icon
+                icon="fa-brands fa-linkedin-in"
+                class="icon"
+              />
             </div>
           </div>
         </div>
@@ -77,8 +103,10 @@
         </div>
       </div>
       <div class="container">
-        <div class="content text">
-          <div>LOGISTIC SERVICE</div>
+        <div class="content">
+          <div class="text">
+            LOGISTIC SERVICE
+          </div>
           <div class="row">
             <div class="col-6">
               <div class="title">
@@ -132,7 +160,7 @@ export default {
   }
   .home{
     width: 100%;
-    height: 70vh;
+    height: 85vh;
     position: relative;
   }
   .navBar{
@@ -140,6 +168,7 @@ export default {
     width: 100%;
     height: 60px;
     top: 0;
+    margin-top: 15px;
     color: white;
     font-weight: 600;
   }
@@ -147,6 +176,15 @@ export default {
   img{
     filter: brightness(40%);
     opacity: 0.95;
+  }
+
+  .title{
+    font-size: 75px;
+    color: white;
+  }
+
+  .paragraph{
+    color: rgb(210, 210, 210);
   }
 
   #logo1{
@@ -160,34 +198,17 @@ export default {
     color: rgb(210, 210, 210);
     font-weight: 900;
   }
-
   .content{
     position: absolute;
     top: 0;
-    bottom: 0;
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-  .text{
     height: 100%;
-    font-size: 25px;
-    font-weight: 600;
-    color: #038384;
     margin: auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
-
   }
-  .title{
-    font-size: 75px;
-    font-weight: 900;
-    color: white;
-  }
-  .paragraph{
-    font-size: 15px;
-    font-weight: 300;
-    color: rgb(210, 210, 210);
+  .text{
+    font-size: 25px;
   }
 
 </style>
