@@ -19,14 +19,11 @@
               in Number
             </div>
           </div>
-          <div class="paragraph-light d-flex justify-items-center paddingFix">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dignissimos facere quam, illum ipsa quos aliquid cumque enim atque deleniti.
-          </div>
           <div class="resultBox d-flex justify-content-between">
-            <div class="result">CIAO</div>
-            <div class="result">CIAO</div>
-            <div class="result">CIAO</div>
-            <div class="result">CIAO</div>
+            <div v-for="i in result" class="result text-center">
+              <div class="text" style="font-size: 40px;">{{ i.number }}</div>
+              <div class="smallTitle pt-2">{{ i.type }}</div>
+            </div>
           </div>
         </div>
       </div>
@@ -46,7 +43,7 @@ export default {
 <style lang="scss" scoped>
   .background{
     width: 100%;
-    height: 65vh;
+    height: 55vh;
     position: relative;
   }
 
@@ -69,13 +66,18 @@ export default {
     align-items: center;
   }
 
+  .smallTitle{
+    color: white;
+  }
   .box{
     display: flex;
     flex-direction: column;
     margin: auto;
   }
 
-  .result{
-    width: calc(90% / 4);
+  .resultBox{
+    padding-top: 60px;
+    gap:150px
   }
+
 </style>
