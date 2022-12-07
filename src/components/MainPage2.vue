@@ -78,9 +78,6 @@ export default {
   .title{
     color: white;
   }
-  .titleBackground{
-    background-color: #16928e32
-  }
   .card{
     padding: 40px;
     height: 350px;
@@ -88,6 +85,7 @@ export default {
     background-color: #171819;
     border-radius: 10px;
   }
+
   .smallTitle{
     font-size: 25px;
     color: white;
@@ -105,13 +103,4 @@ export default {
     justify-content: space-between;
   }
 
-  .iconCircle{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #16928e32;
-    border-radius:50%;
-    padding: 15px;
-    aspect-ratio: auto 1/1;
-  }
 </style>

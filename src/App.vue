@@ -4,9 +4,13 @@
       :site-data="siteData"
       :arr-menu="arrMenu"
     />
-    <MainPage1 :veichel-types="veichelTypes" />
+    <MainPage1 :vehicle-types="vehicleTypes" />
     <MainPage2 />
     <MainPage3 />
+    <MainPage4
+      :result="result"
+      :site-data="siteData"
+    />
     <FooterPage />
   </div>
 </template>
@@ -17,6 +21,7 @@ import HeaderPage from '@/components/HeaderPage.vue';
 import MainPage1 from '@/components/MainPage1.vue';
 import MainPage2 from '@/components/MainPage2.vue';
 import MainPage3 from '@/components/MainPage3.vue';
+import MainPage4 from '@/components/MainPage4.vue';
 import FooterPage from '@/components/FooterPage.vue';
 
 export default {
@@ -26,6 +31,7 @@ export default {
     MainPage1,
     MainPage2,
     MainPage3,
+    MainPage4,
     FooterPage,
   },
 
@@ -42,7 +48,6 @@ export default {
           },
         ],
       },
-
       arrMenu: [
         {
           name: 'HOME',
@@ -65,7 +70,7 @@ export default {
           link: 'https://www.google.it/',
         },
       ],
-      veichelTypes: [
+      vehicleTypes: [
         {
           name: 'Light',
           weight: '1200Kg',
@@ -82,6 +87,24 @@ export default {
           img: 'truck-1.png',
         },
 
+      ],
+      result: [
+        {
+          type: 'Certifications',
+          number: 128,
+        },
+        {
+          type: 'Employees',
+          number: 230,
+        },
+        {
+          type: 'Customers',
+          number: 517,
+        },
+        {
+          type: 'Countries Served',
+          number: 94,
+        },
       ],
 
     };
@@ -147,6 +170,7 @@ export default {
   .title{
     font-size: 40px;
     font-weight: 900;
+    color: #1c2523;
   }
 
   .text{
@@ -164,6 +188,15 @@ export default {
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 6px;
+    background-color: #0f5a577e
+  }
+
+  .iconCircle{
+    display: flex;
+    background-color: #16928e32;
+    border-radius:50%;
+    padding: 20px;
+    aspect-ratio: auto 1/1;
   }
 
 </style>

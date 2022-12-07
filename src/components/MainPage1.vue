@@ -46,7 +46,7 @@
             <div class="row mt-5">
               <div class="col-12 d-flex flex-column">
                 <div
-                  v-for="obj in veichelTypes"
+                  v-for="obj in vehicleTypes"
                   :key="(obj +1)"
                   class="d-flex mb-3 gap-4"
                   style="height:70px; width: 100%;"
@@ -88,7 +88,7 @@
 <script>
 export default {
   props: {
-    veichelTypes: Array,
+    vehicleTypes: Array,
   },
 };
 </script>
@@ -128,7 +128,7 @@ export default {
     padding: 5px;
   }
   .titleBackground{
-    background-color: rgba(218,236,237,0.5)
+    background-color: #16928e26;
   }
 
 </style>
