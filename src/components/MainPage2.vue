@@ -83,7 +83,7 @@ export default {
     height: 350px;
     width: calc(92% / 3);
     background-color: #171819;
-    border-radius: 10px;
+    border-radius: 15px;
   }
 
   .smallTitle{

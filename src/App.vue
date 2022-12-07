@@ -11,6 +11,8 @@
       :result="result"
       :site-data="siteData"
     />
+    <MainPage5 />
+    <MainPage6 :site-data="siteData" />
     <FooterPage />
   </div>
 </template>
@@ -22,6 +24,8 @@ import MainPage1 from '@/components/MainPage1.vue';
 import MainPage2 from '@/components/MainPage2.vue';
 import MainPage3 from '@/components/MainPage3.vue';
 import MainPage4 from '@/components/MainPage4.vue';
+import MainPage5 from '@/components/MainPage5.vue';
+import MainPage6 from '@/components/MainPage6.vue';
 import FooterPage from '@/components/FooterPage.vue';
 
 export default {
@@ -32,6 +36,8 @@ export default {
     MainPage2,
     MainPage3,
     MainPage4,
+    MainPage5,
+    MainPage6,
     FooterPage,
   },
 
@@ -41,6 +47,7 @@ export default {
         email: 'cargotransport@gmail.com',
         phoneNumber: '+1(305)1234-5678',
         openHours: 'Mon - Sat - 9:00 - 18:00',
+        location: 'Main Avenue, 987',
         photo: [
           {
             banner1: 'bg-9.jpg',
@@ -133,6 +140,8 @@ export default {
   a{
     text-decoration: none;
     color: white;
+    position: relative;
+    z-index: 1;
   }
 
   a:hover {

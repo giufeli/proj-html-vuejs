@@ -28,22 +28,22 @@
           </div>
           <div class="cards box text-center">
             <div class="text iconCircle mb-4">02</div>
-            <div class="smallTitle">Collection of information</div>
+            <div class="smallTitle">Service Invoice Sending</div>
             <div class="paragraph-light">Lorem ipsum dolor sit amet consectetur.</div>
           </div>
           <div class="cards box text-center">
             <div class="text iconCircle mb-4">03</div>
-            <div class="smallTitle">Collection of information</div>
+            <div class="smallTitle">Withdrawal of Cargo</div>
             <div class="paragraph-light">Lorem ipsum dolor sit amet consectetur.</div>
           </div>
           <div class="cards box text-center">
             <div class="text iconCircle mb-4">04</div>
-            <div class="smallTitle">Collection of information</div>
+            <div class="smallTitle">Transport Customers Order</div>
             <div class="paragraph-light">Lorem ipsum dolor sit amet consectetur.</div>
           </div>
           <div class="cards box text-center">
             <div class="text iconCircle mb-4">05</div>
-            <div class="smallTitle">Collection of information</div>
+            <div class="smallTitle">Successful Delivery</div>
             <div class="paragraph-light">Lorem ipsum dolor sit amet consectetur.</div>
           </div>
 
@@ -105,12 +105,10 @@ export default {
   }
   .mainBox{
     position: relative;
-    width: 100vw;
     z-index: 1;
   }
   .line{
     position: absolute;
-    z-index: 999;
     top: 0;
     margin-top: 83px;
     width: 100vw;

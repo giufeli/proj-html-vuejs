@@ -43,7 +43,7 @@ export default {
 <style lang="scss" scoped>
   .background{
     width: 100%;
-    height: 55vh;
+    height: 60vh;
     position: relative;
   }
 
