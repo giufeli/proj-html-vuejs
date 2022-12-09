@@ -21,20 +21,20 @@
         <div class="row d-flex align-items-center pt-5 justify-content-between">
                   <div class="card">
                     <img src="@/assets/img/logo-1.png" alt="">
-                    <div class="paragraph-dark mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati facere ipsa cumque saepe sapiente! Sapiente veniam consequuntur omnis, atque provident eius quis, aspernatur fugiat culpa iste ducimus?</div>
-                    <div class="paragraph-dark mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat reprehenderit non velit.</div>
+                    <div class="paragraph-dark mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati facere ipsa cumque saepe sapiente! Sapiente veniam.</div>
+                    <div class="paragraph-dark mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
                     <div class="d-flex justify-content-end"><font-awesome-icon icon="fa-solid fa-quote-right" class="icon"/></div>
                   </div>
                   <div class="card">
                     <img src="@/assets/img/logo-2.png" alt="">
-                    <div class="paragraph-dark mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati facere ipsa cumque saepe sapiente! Sapiente veniam consequuntur omnis, atque provident eius quis, aspernatur fugiat culpa iste ducimus?</div>
-                    <div class="paragraph-dark mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat reprehenderit non velit.</div>
+                    <div class="paragraph-dark mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati facere ipsa cumque saepe sapiente! Sapiente veniam.</div>
+                    <div class="paragraph-dark mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
                     <div class="d-flex justify-content-end"><font-awesome-icon icon="fa-solid fa-quote-right" class="icon"/></div>
                   </div>
                   <div class="card">
                     <img src="@/assets/img/logo-3.png" alt="">
-                    <div class="paragraph-dark mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati facere ipsa cumque saepe sapiente! Sapiente veniam consequuntur omnis, atque provident eius quis, aspernatur fugiat culpa iste ducimus?</div>
-                    <div class="paragraph-dark mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat reprehenderit non velit.</div>
+                    <div class="paragraph-dark mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati facere ipsa cumque saepe sapiente! Sapiente veniam.</div>
+                    <div class="paragraph-dark mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
                     <div class="d-flex justify-content-end"><font-awesome-icon icon="fa-solid fa-quote-right" class="icon"/></div>
                   </div>
                 </div>

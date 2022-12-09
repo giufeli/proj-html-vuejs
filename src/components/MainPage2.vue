@@ -15,13 +15,13 @@
           </div>
         </div>
         <div class="row d-flex align-items-center pt-5 justify-content-between">
-          <div class="col-8 paragraph-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae porro unde laboriosam provident ullam, perspiciatis esse animi nam! Modi sapiente fuga suscipit similique sed vero magnam dolore, commodi quibusdam saepe.</div>
+          <div class="col-8 paragraph-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae porro unde laboriosam provident ullam, perspiciatis esse animi nam! Modi sapiente fuga suscipit similique sed vero magnam.</div>
           <div class="col-3 d-flex align-items-center justify-content-end">
             <button
               type="button"
               class="btn btn-info btn2"
               >
-              READ MORE
+              SEE ALL
               </button>
           </div>
         </div>

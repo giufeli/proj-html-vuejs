@@ -96,7 +96,7 @@ export default {
 <style lang="scss" scoped>
   .background{
     width: 100%;
-    height: 85vh;
+    height: 90vh;
     background-color: white;
   }
   .colored{
@@ -123,7 +123,7 @@ export default {
     color:#191c1e
   }
   .bgTruck{
-    background-color: #d9f5f5eb;
+    background-color: #00a1a12d;
     border-radius: 6px;
     padding: 5px;
   }

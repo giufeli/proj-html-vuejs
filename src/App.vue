@@ -13,7 +13,10 @@
     />
     <MainPage5 />
     <MainPage6 :site-data="siteData" />
-    <FooterPage />
+    <FooterPage
+      :footer-obj="footerObj"
+      :site-data="siteData"
+    />
   </div>
 </template>
 
@@ -113,6 +116,87 @@ export default {
           number: 94,
         },
       ],
+      footerObj: {
+        about: [
+          {
+            name: 'The Company',
+            link: 'https://www.google.it/',
+          },
+          {
+            name: 'Institutional',
+            link: 'https://www.google.it/',
+          },
+          {
+            name: 'Social & Events',
+            link: 'https://www.google.it/',
+          },
+          {
+            name: 'Innovation',
+            link: 'https://www.google.it/',
+          },
+          {
+            name: 'Environment',
+            link: 'https://www.google.it/',
+          },
+          {
+            name: 'Technology',
+            link: 'https://www.google.it/',
+          },
+        ],
+        transport: [
+          {
+            name: 'Industrialized',
+            link: 'https://www.google.it/',
+          },
+          {
+            name: 'Chemicals',
+            link: 'https://www.google.it/',
+          },
+          {
+            name: 'Packaged Liquids',
+            link: 'https://www.google.it/',
+          },
+          {
+            name: 'Construction',
+            link: 'https://www.google.it/',
+          },
+          {
+            name: 'Laminated Wood',
+            link: 'https://www.google.it/',
+          },
+          {
+            name: 'And others',
+            link: 'https://www.google.it/',
+          },
+        ],
+        support: [
+          {
+            name: 'Responsibility',
+            link: 'https://www.google.it/',
+          },
+          {
+            name: 'Term of Use',
+            link: 'https://www.google.it/',
+          },
+          {
+            name: 'About Cookies',
+            link: 'https://www.google.it/',
+          },
+          {
+            name: 'Privacy Policy',
+            link: 'https://www.google.it/',
+          },
+          {
+            name: 'Accesibility',
+            link: 'https://www.google.it/',
+          },
+          {
+            name: 'Information',
+            link: 'https://www.google.it/',
+          },
+        ],
+
+      },
 
     };
   },
@@ -125,6 +209,36 @@ export default {
 
   body {
     font-family: 'Poppins', sans-serif;
+  }
+
+  #logo1{
+    font-size: 30px;
+    color: #038384;
+    font-weight: 900;
+  }
+
+  #logo2{
+    font-size: 30px;
+    color: rgb(210, 210, 210);
+    font-weight: 900;
+  }
+
+  .logoBg{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    gap: 10px;
+    height: 58px;
+    z-index: 9;
+  }
+  .radius_rectangle {
+    position: absolute;
+    top: 0;
+    width: 100px;
+    background-color: #16928e35;
+    height: 60px;
+    border-radius: 40px 0px 0px 40px;
   }
 
   .marginFix{
@@ -154,6 +268,12 @@ export default {
     --bs-btn-border-color: #038384;
   }
 
+  .btn:hover {
+    color: white;
+    background-color: #00a7a1;
+    border-color: #00a7a1;
+}
+
   .btn2{
     --bs-btn-bg: 0;
   }
@@ -164,13 +284,13 @@ export default {
   }
 
   .paragraph-dark{
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 300;
     color: #a4a4a4;
   }
 
   .paragraph-light{
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 300;
     color: #818181;
     margin-top: 30px;

@@ -81,12 +81,12 @@
               <div style="font-weight: 300;">{{ siteData.email }}</div>
             </div>
             <div class="text d-flex justify-content-start align-items-center gap-3 mt-3">
-              <div class="text iconCircle" ><font-awesome-icon icon="fa-solid fa-location-dot" /></div>
+              <div class="text iconCircle" ><font-awesome-icon icon="fa-solid fa-location-dot" class="icon"/></div>
               <div style="font-weight: 300;">{{ siteData.location }}</div>
             </div>
             <div class="row">
                 <div class="col-7">
-                  <button class="btn btn-info btn2 px-3 my-4" type="button">View Map</button>
+                  <button class="btn btn-info btn2 px-3 my-4" type="button">VIEW MAP</button>
                 </div>
               </div>
 

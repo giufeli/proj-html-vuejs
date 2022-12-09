@@ -60,8 +60,13 @@
         <div class="container">
           <div class="row">
             <div class="col-3 marginFix">
-              <span id="logo1">NEXT</span>
-              <span id="logo2">GEN</span>
+              <div>
+                <div class="logoBg">
+                  <span id="logo1">NEX</span>
+                  <span id="logo2">GEN</span>
+                </div>
+                <div class="radius_rectangle" />
+              </div>
             </div>
             <div class="col-9 marginFix">
               <div class="d-flex">
@@ -140,7 +145,7 @@ export default {
 <style lang="scss" scoped>
   .topBar{
     width: 100%;
-    height: 45px;
+    height: 55px;
     background-color: rgba(33,51,62,255);
     color: rgb(210, 210, 210);
     display: flex;
@@ -181,17 +186,6 @@ export default {
     color: rgb(210, 210, 210);
   }
 
-  #logo1{
-    font-size: 30px;
-    color: #038384;
-    font-weight: 900;
-  }
-
-  #logo2{
-    font-size: 30px;
-    color: rgb(210, 210, 210);
-    font-weight: 900;
-  }
   .content{
     position: absolute;
     top: 0;

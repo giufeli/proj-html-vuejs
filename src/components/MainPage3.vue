@@ -19,7 +19,7 @@
         </div>
       </div>
       <div class="mainBox">
-        <div class="line"></div>
+        <!-- <div class="line"></div> -->
         <div class="container d-flex justify-content-between pt-5">
           <div class="cards box text-center">
             <div class="text iconCircle mb-4">01</div>
@@ -111,7 +111,7 @@ export default {
     position: absolute;
     top: 0;
     margin-top: 83px;
-    width: 100vw;
+    width: 100%;
     height: 10px;
     background-color: #16928e;
   }
