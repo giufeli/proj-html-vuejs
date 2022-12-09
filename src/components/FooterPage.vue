@@ -66,6 +66,21 @@
         </div>
       </div>
     </div>
+    <div class="lastFooter">
+      <div class="container d-flex justify-content-between align-items-center" style="height: 100%;">
+        <div class="paragraph-dark">
+          Enjoy the low price. We are tracking any intention of privacy.
+        </div>
+        <div class="paragraph-dark">
+          2020 NEXGEN is Proudly Powered by <span style="color: #038384;">Codings</span>.
+        </div>
+      </div>
+      <div class="text iconCircle" >
+        <a href="#">
+          <font-awesome-icon icon="fa-solid fa-arrow-up"/>
+        </a>
+      </div>
+    </div>
   </main>
 </template>
 
@@ -81,8 +96,15 @@ export default {
 <style lang="scss" scoped>
    .background{
     width: 100%;
-    height: 85vh;
+    height: 65vh;
     background-color: rgb(15, 15, 15);
+  }
+
+  .lastFooter{
+    position: relative;
+    background-color: black;
+    width: 100%;
+    height: 70px;
   }
   .title{
     color: white;
@@ -126,6 +148,20 @@ export default {
 
   a{
     color: #a4a4a4;
+    margin: 0;
+    padding: 0;
+  }
+
+  .iconCircle{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 50%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+    background-color: #747d744f;
+    padding: 15px;
+    color: rgba(3, 132, 132, 0.526);
   }
 
 </style>
